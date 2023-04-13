@@ -1,5 +1,18 @@
 package br.com.cotiinfoirmatica.repositories;
 
-public class ContatoRepository {
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
+import br.com.cotiinformatica.factories.ConnectionFactory;
+
+public class ContatoRepository {
+	public void create() throws Exception{
+		
+		//abrindo banco
+		ConnectionFactory connectionFactory = new ConnectionFactory();
+		
+		Connection connection = connectionFactory.getConnection();
+		
+
+	}
 }

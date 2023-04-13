@@ -10,8 +10,8 @@ public class ConnectionFactory {
 		// parâmetros de conexão
 		String driver = "org.postgresql.Driver";
 		String host = "jdbc:postgresql://localhost:5432/bd_agendacontatos";
-		String user = "postgres";
-		String password = "coti";
+		String user = "Henrique";
+		String password = "Rcgh2012";
 
 		Class.forName(driver);
 		return DriverManager.getConnection(host, user, password);
