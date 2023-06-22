@@ -3,7 +3,7 @@ package br.com.cotiinformatica.entities;
 import java.util.List;
 
 public class Usuario {
-	private Integer idContato;
+	private Integer idUsuario;
 	private String nome;
 	private String email;
 	private String senha;
@@ -11,19 +11,21 @@ public class Usuario {
 	public Usuario() {
 		// TODO Auto-generated constructor stub
 	}
-	public Usuario(Integer idContato, String nome, String email, String senha, List<Contato> contatos) {
+	
+	public Usuario(Integer idUsuario, String nome, String email, String senha, List<Contato> contatos) {
 		super();
-		this.idContato = idContato;
+		this.idUsuario = idUsuario;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
 		this.contatos = contatos;
 	}
-	public Integer getIdContato() {
-		return idContato;
+
+	public Integer getIdUsuario() {
+		return idUsuario;
 	}
-	public void setIdContato(Integer idContato) {
-		this.idContato = idContato;
+	public void setIdUsuario(Integer idUsuario) {
+		this.idUsuario = idUsuario;
 	}
 	public String getNome() {
 		return nome;
